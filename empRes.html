@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="emp.js"></script>
+    <link rel="stylesheet" href="emp.css">
+
+</head>
+<body style="background-color: antiquewhite;">
+    <div class="container" >
+        <div class="row" >
+            <div class="col-xs-12 col-sm-12">
+                <h4 style="text-align: center;">
+                    Enter Employee Details
+                </h4>
+            </div>
+        </div>
+        <div class="row" id="one">
+            <div class="col-xs-12 col-sm-3"><h4>Enter Name:</h4></div>
+            <div class="col-xs-12 col-sm-6">
+                <input type="text" class="form-control form-control-sm"
+                id="name" onkeydown="myfun()">
+            </div>
+          </div>
+
+        <div class="row" id="two">
+            <div class="col-xs-12 col-sm-3"><h4> Enter Email Id:</h4></div>
+            <div class="col-xs-12 col-sm-6">
+                <input type="text"  class="form-control form-control-sm" id="email">
+            </div>
+        </div>
+    
+        <div class="row" id="three">
+            <div class="col-xs-12 col-sm-3"><h4>Enter Mobile Number:</h4></div>
+            <div class="col-xs-12 col-sm-6">
+                <input type="text"  class="form-control form-control-sm" id="number">
+            </div>
+          </div>
+    
+          <div class="row">
+            <div class="col-xs-12 col-sm-3"><h4> Country:</h4></div>
+            <div class="col-xs-12 col-sm-6">
+                <input type="text" class="form-control form-control-sm"
+                value="India" readonly>
+            </div>
+          </div>
+
+          <div class="row" id="states">
+            <div class="col-xs-12 col-sm-3"><h4>Select States:</h4></div>
+            <div class="col-xs-12 col-sm-6">
+                <select class="" name="" onchange="onclickfun()" id="selectid">
+                    <option> --- Choose State --- </option>
+                    <option value="">Bihar</option>
+                    <option value="">Gujarat</option>
+                    <option value="">Maharashtra</option>
+                    <option value="">Madhya Pradesh</option>
+                  </select>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-xs-12 col-sm-3"><h4>Select City:</h4></div>
+            <div class="col-xs-12 col-sm-6" id="city"></div> 
+          </div>
+
+          <div class="row" id="address_tr">
+            <div class="col-xs-12 col-sm-3"><h4>Enter Address:</h4></div>
+            <div class="col-xs-12 col-sm-6">
+                <input type="text" class="form-control form-control-sm" id="address">
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-xs-12 col-sm-3">
+                <input type="submit" value="Submit" onclick="myfun()">
+            </div>
+            <div class="col-xs-12 col-sm-6" class="fortxt">
+                <input type="text" id="submit_txt" class="form-control form-control-sm">
+            </div>
+          </div>
+    
+          <div class="row">
+            <div class="col-xs-12 col-sm-3">
+                <input type="submit" value="Search" onclick="searching()">
+            </div>
+            <div class="col-xs-12 col-sm-6" class="fortxt">
+                <input type="text" id="searchtxt" class="form-control form-control-sm">
+            </div>
+          </div>
+    </div>
+</body>
+</html>

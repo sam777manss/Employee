@@ -1,0 +1,28 @@
+table.table { width:auto; }
+
+.body {
+    
+}
+
+.table {
+    border: 3px solid aquamarine;
+    font-size: 1.5em;
+    margin-top: 1%;
+    margin-left: auto;
+    margin-right: auto;
+}
+input[type="text"] {
+    font-size:25px;
+    border-radius: 10px;
+    border-color: aquamarine;
+}
+
+input[type="submit"] {
+    font-size: 25px;
+    border-color: aquamarine;
+    float:left;
+    border-radius: 10px;
+}
+
+
+
